@@ -1,0 +1,1 @@
+The project is static. To run it open the index.html

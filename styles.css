@@ -1,0 +1,205 @@
+:root {
+  --list-max-height: 100px;
+}
+
+/* Reset and general styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  background: linear-gradient(135deg, #2b4162 0%, #12100e 100%);
+  color: white;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+nav {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+nav li {
+  position: relative;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #64ffda;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav li a.active {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Main content styles */
+main {
+  padding: 2rem;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content h2 {
+  margin-bottom: 2rem;
+}
+
+.content p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.toggle-all-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.toggle-all-button {
+  background: #ffffff;
+  color: #2b4162;
+  border: 1px solid #e0e0e0;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toggle-all-button:hover {
+  background: #f8f9fa;
+  border-color: #2b4162;
+}
+
+.toggle-all-button .collapse-icon {
+  display: none;
+}
+
+.toggle-all-button.expanded .expand-icon {
+  display: none;
+}
+
+.toggle-all-button.expanded .collapse-icon {
+  display: inline-block;
+}
+
+/* List item styles */
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+show-more {
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+show-more h3 {
+  margin-bottom: 1rem;
+}
+
+show-more p {
+  margin-bottom: 1rem;
+}
+
+/* About section styles */
+.about-section {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h3 {
+  color: #2b4162;
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.about-section h4 {
+  color: #455a7f;
+  font-size: 1.2rem;
+  margin: 1.5rem 0 1rem;
+}
+
+.about-section ul {
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-section ul ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-section li {
+  margin-bottom: 0.5rem;
+}
+
+.about-section strong {
+  color: #2b4162;
+}
+
+.about-section hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid #e0e0e0;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show More/Less Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>AI-Powered Content Expansion and PDF Viewer</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Content expansion</a></li>
+          <li><a href="pdf-viewer.html">PDF Viewer</a></li>
+          <li><a href="about.html">About project</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="content">
+        <h2>Content expansion</h2>
+        <div class="toggle-all-wrapper">
+          <button id="toggleAllButton" class="toggle-all-button">
+            <i class="fas fa-caret-down expand-icon"></i>
+            <i class="fas fa-caret-up collapse-icon"></i>
+            <span class="button-text">Expand All</span>
+          </button>
+        </div>
+        <div class="list-container">
+          <show-more>
+            <h3 slot="header">Company Overview 2025</h3>
+            <div slot="content">
+              <p>
+                Our company, established in 1990, has grown to become a leading
+                provider of innovative solutions in the technology sector. With
+                offices in over 20 countries and a workforce exceeding 10,000
+                employees, we continue to push the boundaries of what's possible
+                in software development and digital transformation.
+              </p>
+              <p>
+                In 2025, we've achieved remarkable growth in key areas including
+                artificial intelligence, cloud computing, and sustainable
+                technology solutions. Our commitment to innovation has resulted
+                in over 100 new patents and strategic partnerships with industry
+                leaders worldwide.
+              </p>
+              <p>
+                The company's core values of innovation, sustainability, and
+                employee development remain at the heart of our operations.
+                We've implemented new initiatives for renewable energy in our
+                data centers and launched comprehensive training programs for
+                emerging technologies.
+              </p>
+            </div>
+          </show-more>
+
+          <show-more>
+            <h3 slot="header">Technical Documentation Guidelines</h3>
+            <div slot="content">
+              <p>
+                This comprehensive guide outlines our standard practices for
+                technical documentation, code review processes, and development
+                workflows. All team members are required to follow these
+                guidelines to maintain consistency across projects.
+              </p>
+              <p>
+                Key sections include: Version Control Standards, Code Review
+                Procedures, Documentation Templates, Testing Requirements, and
+                Deployment Protocols. Each section has been updated to reflect
+                our current tech stack and tooling preferences.
+              </p>
+              <p>
+                Special attention should be paid to our new security
+                requirements and performance optimization guidelines. These have
+                been updated based on recent audit findings and industry best
+                practices.
+              </p>
+              <p>
+                The documentation system now integrates with our CI/CD pipeline,
+                ensuring automatic updates when API changes are detected. This
+                helps maintain accuracy and reduces manual documentation
+                overhead.
+              </p>
+            </div>
+          </show-more>
+
+          <show-more>
+            <h3 slot="header">Project Roadmap 2025-2026</h3>
+            <div slot="content">
+              <p>
+                Q2 2025: Launch of next-generation cloud platform with enhanced
+                AI capabilities. Integration of quantum-resistant encryption
+                across all services. Implementation of new microservices
+                architecture.
+              </p>
+              <p>
+                Q3 2025: Rollout of advanced analytics dashboard with real-time
+                monitoring. Development of edge computing solutions for IoT
+                devices. Enhancement of mobile application suite with AR
+                capabilities.
+              </p>
+              <p>
+                Q4 2025: Introduction of blockchain-based verification system.
+                Upgrade of customer support systems with AI-powered chatbots.
+                Launch of new developer tools and SDKs.
+              </p>
+              <p>
+                Q1 2026: Implementation of sustainable computing initiatives.
+                Release of cross-platform development framework. Introduction of
+                new security features and compliance tools.
+              </p>
+              <p>
+                Q2 2026: Global expansion of data center infrastructure. Launch
+                of machine learning optimization tools. Release of new API
+                version with enhanced capabilities.
+              </p>
+            </div>
+          </show-more>
+
+          <show-more>
+            <h3 slot="header">Employee Benefits Update</h3>
+            <div slot="content">
+              <p>
+                We're excited to announce several enhancements to our employee
+                benefits package for 2025. These changes reflect our commitment
+                to supporting our team's well-being and professional growth.
+              </p>
+              <p>
+                New benefits include: Extended parental leave policies,
+                comprehensive mental health coverage, flexible working
+                arrangements, enhanced learning and development budgets, and
+                expanded health insurance coverage.
+              </p>
+              <p>
+                Additionally, we've introduced a new stock option program,
+                sustainability incentives, and improved retirement planning
+                services. These changes will be effective from July 1st, 2025.
+              </p>
+            </div>
+          </show-more>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
